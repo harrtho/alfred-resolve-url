@@ -114,6 +114,15 @@ def main(wf):
             wf.add_item('Invalid URL', url, icon=ICON_WARNING)
             url = None
 
+    # Notify user if update is available
+    # ------------------------------------------------------------------
+    if wf.update_available:
+        wf.add_item('Workflow Update is Available',
+                    '↩ or ⇥ to install',
+                    autocomplete='workflow:update',
+                    valid=False,
+                    icon=ICON_UPDATE)
+
     if not url:
         wf.send_feedback()
         return
