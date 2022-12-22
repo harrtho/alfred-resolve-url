@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # encoding: utf-8
 #
-# Copyright © 2014 deanishe@deanishe.net
+# Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
+# Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
@@ -11,16 +12,24 @@
 """
 """
 
-from __future__ import print_function, unicode_literals
 
-import sys
 import re
-from urlparse import urlparse
-from socket import gethostbyname_ex
+import sys
 from multiprocessing.dummy import Pool
+from socket import gethostbyname_ex
 from time import time
+from urllib.parse import urlparse
 
-from workflow import Workflow, ICON_WARNING, web, ICON_ERROR
+from workflow import ICON_ERROR, ICON_WARNING, Workflow, web
+
+# GitHub repo for self-updating
+UPDATE_SETTINGS = {'github_slug': 'harrtho/alfred-resolve-url'}
+
+# GitHub Issues
+HELP_URL = 'https://github.com/harrtho/alfred-repos/issues'
+
+# Icon shown if a newer version is available
+ICON_UPDATE = 'update-available.png'
 
 URL_REGEX = re.compile(
     r'^[a-z]+://'  # scheme checked through SCHEME_REGEX
@@ -164,6 +173,7 @@ def main(wf):
 
 
 if __name__ == '__main__':
-    wf = Workflow()
+    wf = Workflow(update_settings=UPDATE_SETTINGS,
+                  help_url=HELP_URL)
     log = wf.logger
     sys.exit(wf.run(main))

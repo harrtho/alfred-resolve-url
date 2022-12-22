@@ -75,7 +75,7 @@
 				<key>runningsubtext</key>
 				<string>Resolving URL redirects…</string>
 				<key>script</key>
-				<string>/usr/bin/python resolve.py "{query}"</string>
+				<string>/usr/local/bin/python3 resolve.py "{query}"</string>
 				<key>subtext</key>
 				<string>Determine the ultimate URL</string>
 				<key>title</key>
