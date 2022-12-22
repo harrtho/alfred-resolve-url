@@ -1,7 +1,7 @@
-Resolve HTTP Redirects in Alfred
-================================
+# Resolve HTTP Redirects in Alfred
 
-Follows any HTTP redirects and returns the canonical URL. Also displays information about the primary host (hostname, IP address(es), aliases).
+Follows any HTTP redirects and returns the canonical URL. Also displays information about the
+primary host (hostname, IP address(es), aliases).
 
 ![](https://raw.githubusercontent.com/harrtho/alfred-resolve-url/master/demo.gif "demo.gif")
 
@@ -9,16 +9,16 @@ You can paste a URL into Alfred's query box or grab a URL directly from the
 clipboard. If the URL contains no scheme (`http://`, `https://`, etc.),
 `http://` will be assumed.
 
-## Usage ##
+## Usage
 
 - `resolve URL` — Find and display the canonical URL after all redirects.
-	+ `↩` — Open the new URL in your default browser
-	+ `⌘+↩` — Copy the new URL to the clipboard
+  - `↩` — Open the new URL in your default browser
+  - `⌘+↩` — Copy the new URL to the clipboard
 - `resolvepb` — Grab the URL from the clipboard and resolve any redirects as above.
 
 If the URL has no redirects, a "URL is canonical" message will be displayed.
 
-## Licence, thanks ##
+## Licence, thanks
 
 This workflow is released under the [MIT licence](http://opensource.org/licenses/MIT). It uses
 [Alfred-PyWorkflow](http://www.xdevcloud.de/alfred-pyworkflow) for the plumbing and to resolve
