@@ -22,9 +22,9 @@ clipboard. If the URL contains no scheme (`http://`, `https://`, etc.),
 
 If the URL has no redirects, a "URL is canonical" message will be displayed.
 
-## Licence, thanks
+## License, thanks
 
-This workflow is released under the [MIT licence](http://opensource.org/licenses/MIT). It uses
+This workflow is released under the [MIT license](http://opensource.org/licenses/MIT). It uses
 [Alfred-PyWorkflow](http://www.xdevcloud.de/alfred-pyworkflow) for the plumbing and to resolve
 HTTP redirects.
 
