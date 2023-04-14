@@ -4,7 +4,7 @@
 # Copyright (c) 2022 Thomas Harr <xDevThomas@gmail.com>
 # Copyright (c) 2014 Dean Jackson <deanishe@deanishe.net>
 #
-# MIT Licence. See http://opensource.org/licenses/MIT
+# MIT Licence. See https://opensource.org/licenses/MIT
 #
 # Created on 2014-09-04
 #
