@@ -174,7 +174,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>tell application "Alfred 2"
+				<string>tell application "Alfred"
 	set theData to (the clipboard as text)
 	search "resolve " &amp; theData
 end tell</string>
