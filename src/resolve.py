@@ -66,7 +66,7 @@ def url_fixscheme(url):
     """Return URL with fixed scheme"""
     if SCHEME_REGEX.match(url):
         return url
-    return "http://{url}".format(url=url)
+    return "https://{url}".format(url=url)
 
 def url_valid(url):
     """Return True/False if URL is valid"""

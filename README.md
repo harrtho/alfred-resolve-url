@@ -11,7 +11,7 @@ primary host (hostname, IP address(es), aliases).
 
 You can paste a URL into Alfred's query box or grab a URL directly from the
 clipboard. If the URL contains no scheme (`http://`, `https://`, etc.),
-`http://` will be assumed.
+`https://` will be assumed.
 
 ## Usage
 
